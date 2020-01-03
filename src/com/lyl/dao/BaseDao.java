@@ -13,11 +13,11 @@ public class BaseDao {
 	//数据库连接驱动类
 	private static String driver="com.mysql.jdbc.Driver";
 	//数据库连接字符串
-	private static String url="jdbc:mysql://localhost:3306/db_property";
+	private static String url="jdbc:mysql://160bfbcb.nat123.cc:38328/db_property";
 	//用户名
-	private static String userName="root";
+	private static String userName="lyl";
 	//密码
-	private static String userPwd="123456";
+	private static String userPwd="lyl";
 	
 	static {
 		try {
