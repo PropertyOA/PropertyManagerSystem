@@ -10,52 +10,6 @@ import java.sql.PreparedStatement;
  */
 public class BaseDao {
 
-	//数据库连接驱动类
-	private static String driver="com.mysql.jdbc.Driver";
-	//数据库连接字符串
-	private static String url="jdbc:mysql://160bfbcb.nat123.cc:38328/db_property";
-	//用户名
-	private static String userName="lyl";
-	//密码
-	private static String userPwd="lyl";
-	
-	static {
-		try {
-			Class.forName(driver);
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	/**
-	 * 获取数据库连接
-	 * @return
-	 */
-	public static Connection getConn() {
-		Connection conn=null;
-		try {
-			conn=DriverManager.getConnection(url,userName,userPwd);
-			return conn;
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-			return null;
-		}
-	}
-	/**
-	 * 关闭数据库连接
-	 * @param conn
-	 */
-	public static void closeConn(Connection conn) {
-		try {
-			if(conn!=null) {
-				conn.close();
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
-	}
 	/**
 	 * 增、删、改共用方法
 	 * @param conn 连接对象
