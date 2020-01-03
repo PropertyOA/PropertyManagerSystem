@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class Index extends JFrame {
+public class LoginFrm extends JFrame {
 
 	private JPanel contentPane;
 
@@ -18,7 +18,7 @@ public class Index extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Index frame = new Index();
+					LoginFrm frame = new LoginFrm();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,10 +30,9 @@ public class Index extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Index() {
-		setTitle("\u7269\u4E1A\u7BA1\u7406\u7CFB\u7EDF");
+	public LoginFrm() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 767, 500);
+		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
